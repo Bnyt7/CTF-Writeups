@@ -3,7 +3,7 @@ import hashlib
 import re
 from deep_translator import GoogleTranslator
 
-fusion_temp_celsius = 932  # Average value of 990 - 1025°C
+fusion_temp_celsius = 932
 fusion_temp_fahrenheit = 1709
 fusion_temp_kelvin = 1205
 
