@@ -23,7 +23,7 @@ Try to uncover his old username (old modification) !
 The three challenges all use the same file.
 .qcow2 is a file format for disk image files used by QEMU, a VM.
 
-While I was doing some research, I stumbled opun this writeup : https://ctftime.org/writeup/4974, some parts are similar.
+While I was doing some research, I stumbled upon this writeup : https://ctftime.org/writeup/4974, some parts are similar.
 
 I converted the qcow2 file to a .raw file, which is easier to deal with, using qemu.
 `$qemu-img convert vm-106-disk-0.qcow2 disk.raw`
