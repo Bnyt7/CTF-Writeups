@@ -32,12 +32,13 @@ I used [dcode](https://www.dcode.fr/rot-cipher "dcode") to find the word.
 
 First part of the flag : `HACKDAY{aM_@_fR3E`
 
-For the next part, we have to analyze the images. The second hint is a nod to the fact that some files have hidden data with a password. Steghide, stegseek or any similar tool can be used to extract content from the images.
-In our case, only say_hi has hidden data.
+For the next part, we have to analyze the images. The second hint is a nod to the fact that some files have hidden data with a password. Steghide, stegseek or any similar tool can be used to extract content in that case.
+Only say_hi has hidden data.
 
-[stegseek](../Attachments/CantFly/stegseek.png)
+![stegseek](../Attachments/CantFly/stegseek.png)
 
 And the second part of the flag is inside the output.
-[flag part 2](../Attachments/CantFly/flag2.png)
+
+![flag part 2](../Attachments/CantFly/flag2.png)
 
 `HACKDAY{aM_@_fR3E-@LbaRT0s5}`
