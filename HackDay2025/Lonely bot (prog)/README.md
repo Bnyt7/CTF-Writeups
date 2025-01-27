@@ -11,6 +11,7 @@ Install pip translator
 
 Change the rockyou.txt location to yours if it's different.
 
+Change the date to today's date.
 
 
 `HACKDAY{Y3E4H_1ZY_R1GHT!}`
