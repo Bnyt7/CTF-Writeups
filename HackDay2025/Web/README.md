@@ -10,13 +10,13 @@
 
 This is an easy web challenge. 
 If we check the source code, there is a suspicious directory.
-![sourcecode](Web/sourcecode.png)
+![sourcecode](sourcecode.png)
 
 
 Let's check that secret_place_for_secrets directory.
-![secretplace](Web/secretplace.png)
+![secretplace](secretplace.png)
 
-![secretplacesource](Web/secretplacesource.png)
+![secretplacesource](secretplacesource.png)
  
 There's a Js code inside.
 
@@ -106,4 +106,4 @@ http://challenges.hackday.fr:37784/g3dMNMNDNybl_GXX_U/
 
 It automatically redirects to http://challenges.hackday.fr/g3dMNMNDNybl_GXX_U/ which doesnt give anything. Check the source code and change the url back to http://challenges.hackday.fr:37784
 
-![flag](Web/flag.png)
+![flag](flag.png)
