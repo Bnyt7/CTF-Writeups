@@ -8,7 +8,7 @@ I used wireshark to follow the http/ tcp streams.
 
 ![httpstream](../Attachments/Copper/httpstream.png)
 
-There is at least cookie for every stream that looks like base64.
+There is at least one cookie in the request header for every stream that looks like base64.
 
 If the "=" at the beginning of every cookie is removed, the base64 can be decoded.
 
