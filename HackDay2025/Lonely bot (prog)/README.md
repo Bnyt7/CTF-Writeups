@@ -5,7 +5,7 @@
 
 Ugly code but it worked.
 
-Install pip translator
+Install deep translator
 
 `pip install deep-translator`
 
