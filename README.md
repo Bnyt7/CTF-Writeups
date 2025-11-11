@@ -14,8 +14,12 @@ Participations 2025 :
 
 - FCSC 2025
 
+- (Made CTF Challenges for DaVinciCode's 2025 recruitments)
+
 - CTF Mission Vérité (OSINT)
 
 - JailCTF
 
 - ECW Online Qualifiers + Finals
+
+- Infobahn CTF
