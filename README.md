@@ -23,3 +23,5 @@ Participations 2025 :
 - ECW Online Qualifiers + Finals
 
 - Infobahn CTF
+
+- Platypwn CTF
