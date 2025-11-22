@@ -25,3 +25,5 @@ Participations 2025 :
 - Infobahn CTF
 
 - Platypwn CTF
+
+- Cybernight by CTFREI (🏆)
