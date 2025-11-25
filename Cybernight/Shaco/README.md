@@ -3,6 +3,8 @@ Web - Easy/Intro
 
 Le but est de supprimer Shaco. Il y a un gros bouton rouge qui permet de faire ça. Sauf que quand on clique dessus, ça ne marche pas.
 
+![Description de Shaco](shaco.png)
+
 Un message d'erreur indique qu'il y a sûrement besoin d'un mot de passe dans le corps du message pour réaliser cette action.
 
 
