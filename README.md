@@ -27,3 +27,7 @@ Participations 2025 :
 - Platypwn CTF
 
 - Cybernight by CTFREI (🏆)
+
+- HeroCTF (only the first day)
+
+- GreHack CTF (🥈)
