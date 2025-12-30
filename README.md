@@ -31,3 +31,5 @@ Participations 2025 :
 - HeroCTF (only the first day)
 
 - GreHack CTF (🥈)
+
+- HTB University CTF 2025: Tinsel Trouble
