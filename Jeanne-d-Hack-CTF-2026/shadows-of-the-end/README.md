@@ -19,6 +19,7 @@ Ce dernier est visiblement impliqué dans une affaire de cyberharcèlement avec 
 
 ![](Images/calendar.png)
 ![](Images/meeting.png)
+
 On découvre par la même occasion avec [Holehe](https://github.com/megadose/holehe) que Nicolas a un compte X/Twitter. Pas plus d'infos pour l'instant.
 
 Un Google Dork permettait aussi de trouver son compte en testant différentes combinaisons de son pseudo.
