@@ -33,3 +33,7 @@ Participations 2025 :
 - GreHack CTF (🥈)
 
 - HTB University CTF 2025: Tinsel Trouble
+
+- HackDay 2026 Quals
+
+- Jeanne d'Hack CTF 2026
