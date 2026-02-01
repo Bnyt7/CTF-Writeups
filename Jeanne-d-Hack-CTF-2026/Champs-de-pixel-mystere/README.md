@@ -4,7 +4,7 @@
 
 ![Description](Images/desc.png)
 
-En utilisant [Sherlock](https://github.com/sherlock-project/sherlock), on retrouve un compte Gamestop : https://www.gamespot.com/profile/LuigiLag42/
+En utilisant [Sherlock](https://github.com/sherlock-project/sherlock), on retrouve un compte Gamespot : https://www.gamespot.com/profile/LuigiLag42/
 
 ![best pixel arts](Images/posts.png)
 
@@ -26,7 +26,7 @@ Cette troisième version street-art de Vincent Van Gogh est l’œuvre du franç
 Vous pouvez découvrir son univers sur son compte Instagram @inthewoup.
 ```
 
-L'artiste est In The Woup et référence Vincent Van Gogh, peintre néérlandais (Pays-Bas). Les Tournesols font d'ailleurs partie des oevures les plus connues du peintre (https://fr.wikipedia.org/wiki/Les_Tournesols)
+L'artiste est "In The Woup" et rend hommage à Vincent Van Gogh, peintre néérlandais (Pays-Bas). Les Tournesols font d'ailleurs partie des oeuvres les plus connues du peintre (https://fr.wikipedia.org/wiki/Les_Tournesols)
 
 Flag :
 ```JDHACK{in_the_woup_pays_bas}```
