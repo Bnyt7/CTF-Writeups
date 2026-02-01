@@ -34,7 +34,7 @@ Le compte a bien la même photo de profil, la même bannière.
 Malheureusement, il n'y a pas plus d'informations sur le profil de Kael (on sait juste qu'il est né le 11 Avril 1998) ni sur Werc. 
 ![](Images/minecraft_fr_profile.png)
 
-Avec l'aide de holehe, on trouve un compte associé à son mail sur twitter et sur gravatar. ([En rétrospective, la photo de profil sur minecraft fr venait de gravatar, ça aurait pu être un indice](https://gravatar.com/avatar/d1d0cbec8c693ed57014133ebae814d572fee4efd8091de4f0e1bb243e4e428e?s=384))
+Avec l'aide de holehe, on trouve un compte associé à son mail sur twitter et sur gravatar. ([Avec du recul, la photo de profil sur minecraft fr venait de gravatar, ça aurait pu être un indice](https://gravatar.com/avatar/d1d0cbec8c693ed57014133ebae814d572fee4efd8091de4f0e1bb243e4e428e?s=384))
 
 ![](Images/holehe_results.png)
 https://gravatar.com/fascinating9953d63170
@@ -50,7 +50,7 @@ Cependant 3nd3rm4nHunt3r est présent sur :
 - X/Twitter
 - Tiktok
 
-En effet sur Twitter [il y a une autre confrontation entre Kael et ce bon vieux Nicolas d'Obsidian Crew qui possède la même photo de profil.](https://x.com/3nd3rm4nHunt3r/status/1997399483609497884) 
+En effet, sur Twitter, [il y a une autre confrontation entre Kael et ce bon vieux Nicolas d'Obsidian Crew qui possède la même photo de profil.](https://x.com/3nd3rm4nHunt3r/status/1997399483609497884) 
 
 ![](Images/tweet.png)
 La bannière de Nicolas représente 3 personnes avec des vêtements en obsidienne : il s'agit des membres de l'Obsidian Crew.
