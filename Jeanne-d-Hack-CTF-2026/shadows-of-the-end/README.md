@@ -13,7 +13,7 @@ En cherchant son nom sur Facebook, on tombe sur [un profil qui nous plait](https
 ![](Images/facebook.png)
 Il a par la même occasion laissé son gmail : ``kaeldrayven666789@gmail.com``
 
-Avec l'aide  [Epeios](https://epieos.com), on trouve son [Google Calendar](https://calendar.google.com/calendar/u/0/embed?src=kaeldrayven666789@gmail.com), accessible publiquement.
+Avec l'aide d'[Epeios](https://epieos.com), on trouve son [Google Calendar](https://calendar.google.com/calendar/u/0/embed?src=kaeldrayven666789@gmail.com), accessible publiquement.
 
 Ce dernier est visiblement impliqué dans une affaire de cyberharcèlement avec un certain **Nicolas** sur le forum Minecraft.fr. (Premier prénom !)
 
@@ -60,7 +60,7 @@ Or [Nicolas est suivi par un Gabin](https://x.com/RiffNicola73685/followers), qu
 
 ![](Images/gabin.png)
 
-Sur TikTok, Kael a posté une [vidéo](https://www.tiktok.com/@3nd3rm4nhunt3r/video/7580847700501941526) avec la même image que sur sa photo de profil Facebook. Dans les commentaires, une autre personne se moque de lui :``elenaobsicrew`` qui a le même skin que la personne à droite de la bannière de Nico.
+Sur TikTok, Kael a posté une [vidéo](https://www.tiktok.com/@3nd3rm4nhunt3r/video/7580847700501941526) avec la même image que sur sa photo de profil Facebook. Dans les commentaires, une autre personne se moque de lui :``elenaobsicrew`` qui a le même skin que la personne à droite sur la bannière de Nico.
 ![](Images/tiktok.png)
 
 ![](Images/elena_tiktok.png)
