@@ -34,6 +34,7 @@ Participations 2025 :
 
 - HTB University CTF 2025: Tinsel Trouble
 
+Participations 2026 :
 - HackDay 2026 Quals
 
 - Jeanne d'Hack CTF 2026
