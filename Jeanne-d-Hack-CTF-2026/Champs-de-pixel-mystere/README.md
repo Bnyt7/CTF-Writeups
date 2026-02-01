@@ -4,7 +4,7 @@
 
 ![Description](Images/desc.png)
 
-En utilisant [Sherlock](https://github.com/sherlock-project/sherlock), on retrouve un compte Gamestop : https://www.gamespot.com/profile/LuigiLag42/
+En utilisant [Sherlock](https://github.com/sherlock-project/sherlock), on retrouve un compte Gamespot : https://www.gamespot.com/profile/LuigiLag42/
 
 ![best pixel arts](Images/posts.png)
 
