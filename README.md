@@ -38,3 +38,7 @@ Participations 2026 :
 - HackDay 2026 Quals
 
 - Jeanne d'Hack CTF 2026
+
+- Espilon CTF
+
+- Midnight Flag CTF Quals
