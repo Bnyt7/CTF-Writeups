@@ -42,3 +42,11 @@ Participations 2026 :
 - Espilon CTF
 
 - Midnight Flag CTF Quals
+
+- Bellatrix OSINT CTF
+
+- Hackday finals
+  
+- EC2
+  
+- FCSC 2026
