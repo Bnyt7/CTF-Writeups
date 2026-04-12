@@ -4,17 +4,18 @@ Challenge made by Mizu
 
 "1 Star"
 
-Tu penses écrire rapidement sur ton clavier ? Prouve-le dans 10 Fast Fishers — le jeu de frappe sous-marin addictif où vitesse et style se rencontrent !
+Think you've got fast typing skills? Prove it in 10 Fast Fishers — the addictive underwater typing game where speed meets style!
 
-Regarde des poissons colorés nager sur ton écran, chacun portant un mot. Tape vite, associe le mot, clique sur le poisson, et regarde ton document se transformer sous tes yeux. Poissons-globes en gras, poissons-anges en italique, et même des méduses sournoises qui vont chambouler ta mise en forme !
+Watch colorful fish swim across your screen, each carrying a word. Type fast, match the word, click the fish, and watch your document transform before your eyes. Bold pufferfish, italic angelfish, and even some sneaky jellyfish that'll mess with your formatting!
 
-Enchaîne les combos, accumule les points, et deviens le plus grand dactylographe des océans. Mais méfie-toi du calamar... 🦑
+Build combos, rack up points, and become the ocean's greatest typist. But beware of the squid... 🦑
 
-Prêt à faire des vagues ? Les crevettes t'attendent !
+Ready to make a splash? The shrimp are waiting!
 
-    Application : https://10-fast-fishers.fcsc.fr/
-    Bot : nc challenges.fcsc.fr 2251
-    Note : La VM de l'épreuve a accès à Internet.
+    Application: https://10-fast-fishers.fcsc.fr/
+    Bot: nc challenges.fcsc.fr 2251
+    Note: The challenge VM has Internet access.
+
 
 > **TL;DR**
 > 1. postMessage Exploitation, use event.source hijacking to bypass a check https://book.jorianwoltjer.com/web/client-side/cross-site-scripting-xss/postmessage-exploitation#event.source-hijacking0
