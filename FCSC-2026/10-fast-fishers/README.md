@@ -17,8 +17,8 @@ Prêt à faire des vagues ? Les crevettes t'attendent !
     Note : La VM de l'épreuve a accès à Internet.
 
 > **TL;DR**
-> 1.  Use dotted I normalization `İ` (U+0130) to bypass a filter on "inserthtml" and use execCommand with it and trigger XSS
-> 2. postMessage Exploitation to get DOM XSS, use event.source hijacking to bypass another check https://book.jorianwoltjer.com/web/client-side/cross-site-scripting-xss/postmessage-exploitation#event.source-hijacking0
+> 1. postMessage Exploitation, use event.source hijacking to bypass a check https://book.jorianwoltjer.com/web/client-side/cross-site-scripting-xss/postmessage-exploitation#event.source-hijacking0
+> 2.  Use dotted I normalization `İ` (U+0130) to bypass a filter on "inserthtml" and use execCommand with it and trigger XSS
 
 ## The game
 10 Fast Fishers is an app inspired by those typing minigames.
@@ -506,6 +506,3 @@ This finally works.
 
 ![](Images/flag.png)
 
-
-
-![notfromiframe](Images/notfromiframe.png)
