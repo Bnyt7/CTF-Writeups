@@ -375,7 +375,7 @@ When I click on the crab with the right word, I will trigger an alert the first 
 
 To exploit the multiple  `addEventListener()` methods, I can host a malicious iframe and use the ``postMessage()`` method to pass the malicious web message data to the vulnerable event listener. The parent will assume that a fish with these parameters has been clicked (it doesn't check fishTypes) and process it and then trigger DOM XSS.
 
-![](Images/10ff_exploit.png|697)
+![](Images/10ff_exploit.png)
 
 We still need a word to edit and we can't start the game through an iframe. 
 Remember that "shrimp" word that was initialized ? Well, we're going to exploit it now.
