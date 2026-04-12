@@ -41,7 +41,7 @@ Interestingly, when the app is launched for the first time, there's already a wo
 Let's dive into the source code.
 
 There isn't a lot of files, the interesting ones are `server.js`, `index.html`, `aquarium.html` and most importantly `aquarium.js` and `game.js`.
-
+The bot uses `bot.js` and `utils.js`
 server.js : 
 ```
 const express = require('express');
@@ -93,11 +93,15 @@ The editor (the place where you can see the text about the shrimp) is initially 
 
 index.html simply uses the game.js script.
 
+`bot.js`
+
+The bot has a cookie with the flag as the value and httpOnly set to false. Every console.log usage on the bot will be sent back to you.
+We can easily infer that a XSS needs to be exploited. Instead of sending the cookie to a webhook, we need to trigger `console.log(document.cookie)`
+
+
 ## Cross-window communication
 
-The home page and the  aquarium iframe embedded within it can interact and exchange information with each other using the ``window.addEventListener()`` and ``window.postMessage()`` methods.  postMessage provides a controlled mechanism to circumvent the same-origin policy.
-
-https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage
+The home page and the  aquarium iframe embedded within it can interact and exchange information with each other using the ``window.addEventListener()`` and ``window.postMessage()`` methods.  postMessage provides a controlled mechanism to circumvent the same-origin policy. [(Ref)](https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage)
 
 `aquarium.js` listens for any message from the parent. It makes thorough checks to make sure that the messages were sent by the parent by matching ``event.source`` and ``event.origin``.
 
@@ -221,6 +225,14 @@ window.addEventListener('message', (e) => {
 
 First of all, it checks if the message was sent from the aquarium iframe. If not, it rejects it. Otherwise, it will take the postMessage data and run the handleFishClick() function with it as a parameter.
 
+Then it runs execCommand(). The ``document.execCommand()`` method can execute various commands like edit `contentEditable` elements in our case. This method is deprecated and the feature no longer recommended. [(Ref)](https://developer.mozilla.org/en-US/docs/Web/API/Document/execCommand)
+
+The `insertHTML` is a potential **XSS vector**. A custom filter has been added to prevent this.
+
+![](Images/inserthtml.png)
+
+Then there's no input sanitization in `<div id="editor"></div>` so we can put whatever we want.
+
 ```
 function handleFishClick(data) {
     const { command, value, points, targetWord, fishId } = data;
@@ -263,8 +275,6 @@ function handleFishClick(data) {
     }
 }
 ```
-
-The ``document.execCommand()`` method can execute various commands like edit `contentEditable` elements in our case.
 
 If we take the shrimp for example :
 
@@ -338,30 +348,13 @@ function handleCatchResult(data) {
 ```
 ## Vulnerabilities
 
-Simply reading `game.js` will reveal that there's something wrong with `execCommand()`. Indeed, this method is deprecated and the feature no longer recommended.
+Simply reading `game.js` will reveal that there's something wrong with `execCommand()`. That's why a custom filter with ``.toLowerCase()`` has been added.
 
-https://developer.mozilla.org/en-US/docs/Web/API/Document/execCommand
+However unicode normalization happens when using ``.toUpperCase()`` or ``.toLowerCase()``. Some characters are transformed, and then another normalization seems to happen if this character is used in execCommand. [(Ref 1)](https://mizu.re/post/exploring-the-dompurify-library-hunting-for-misconfigurations)
+[(Ref 2)](https://x.com/garethheyes/status/1858572181472768072)
 
-The `insertHTML` is a potential **XSS vector**.
 
-![](Images/inserthtml.png)
-
-Then there's no input sanitization in `<div id="editor"></div>` so we can put whatever we want.
-
-The dev was aware of this and put a custom filter 
-```
-// TODO: Safely implement insertHtml command
-if (command.toLowerCase() === 'inserthtml') {
-	return;
-}
-```
-
-However unicode normalization happens when using ``.toUpperCase()`` or ``.toLowerCase()``. Some characters are transformed, and then another normalization seems to happen if this character is used in execCommand.
-
-https://mizu.re/post/exploring-the-dompurify-library-hunting-for-misconfigurations
-https://x.com/garethheyes/status/1858572181472768072
-
-In our case, the dotted I can be used to bypass the inserthtml comparison and then normalized to a latin small letter i (U+0069) and be able to execute the inserHTML command, giving us XSS injection.
+In our case, the dotted I (U+0130) can be used to bypass the inserthtml comparison and then normalized to a latin small letter i (U+0069) and be able to execute the inserHTML command, giving us XSS injection.
 
 ```
 // U+0130
@@ -377,7 +370,7 @@ I proved it by adding a crab in the fish pool with this custom command that will
 
 ![](Images/crab_alert.png)
 
-When I click on the crab, I will trigger an alert the first time and every time a valid word appears in the text.
+When I click on the crab with the right word, I will trigger an alert the first time and every time a valid word appears in the text.
 
 To exploit the multiple  `addEventListener()` methods, I can host a malicious iframe and use the ``postMessage()`` method to pass the malicious web message data to the vulnerable event listener. The parent will assume that a fish with these parameters has been clicked (it doesn't check fishTypes) and process it and then trigger DOM XSS.
 
@@ -417,7 +410,7 @@ File to host
 </html>
 ```
 
-(Portswigger academy page for reference https://portswigger.net/web-security/dom-based/controlling-the-web-message-source)
+[(Ref)](https://portswigger.net/web-security/dom-based/controlling-the-web-message-source)
 
 I initially tested this payload, but nothing happened.
 However, when I commented out this part in `game.js`, the XSS worked.
@@ -453,7 +446,7 @@ One hacktricks fork mentions making the event.source `null` by sending a message
 
 I was stuck on this part for a veeeeeeeeery long time, until I found the right article that mentions a similar event.source verification.
 
-https://book.jorianwoltjer.com/web/client-side/cross-site-scripting-xss/postmessage-exploitation#event.source-hijacking0
+[Ref](https://book.jorianwoltjer.com/web/client-side/cross-site-scripting-xss/postmessage-exploitation#event.source-hijacking)
 
 This article explains it very clearly.  `event.source` hijacking can be used to bypass the comparison. I just needed to adapt it a little bit.
 
