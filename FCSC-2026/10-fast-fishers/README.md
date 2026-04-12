@@ -33,7 +33,7 @@ Sea creatures will regularly show up on the screen with a word associated with t
 
 However, there are also molluscs that remove points and can permanently delete words from the editor.
 
-Interestingly, when the app is launched for the first time, there's already a word input area. "shrimp". This will be useful later (foreshadowing)
+Interestingly, when the app is launched for the first time, there's already a word in the input area : "shrimp". This will be useful later (foreshadowing)
 
 ![](Images/gamescreen.png)
 
