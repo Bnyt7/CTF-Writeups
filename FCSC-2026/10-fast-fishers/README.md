@@ -26,8 +26,8 @@ Ready to make a splash? The shrimp are waiting!
 
 Sea creatures will regularly show up on the screen with a word associated with them. The wordlist is the text at the bottom of the page. The goal is to type the right word to select them and click on the fish to earn points. Each fish has a label which will to some changes on the text. 
 
+![](Images/10ff_running.png)
 
-![](Images/Images/10ff_running.png)
 
 (For example, clicking on the shark here with the right word will toggle strikethrough on the first "eyes" word in the text)
 
