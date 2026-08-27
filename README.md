@@ -35,6 +35,7 @@ Participations 2025 :
 - HTB University CTF 2025: Tinsel Trouble
 
 Participations 2026 :
+
 - HackDay 2026 Quals
 
 - Jeanne d'Hack CTF 2026
@@ -50,3 +51,14 @@ Participations 2026 :
 - EC2
   
 - FCSC 2026
+
+- 404CTF
+
+- AMSI
+
+- BreizhCTF
+
+- Tacosint (OSINT only)
+
+- LeHack wargame
+
